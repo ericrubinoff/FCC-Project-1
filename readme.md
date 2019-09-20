@@ -1,10 +1,12 @@
-# FCC Project 1 | George Costanza Tribute Page
+### FCC Project 1 | George Costanza Tribute Page
 
-## Introduction
+Check out the final result [here](https://ericrubinoff.github.io/FCC-Project-1/).
+
+##### Introduction
 
 I'm thrilled to have finished my first FreeCodeCamp project, creating a Tribute Page to one of my favorite TV characters: George Costanza.
 
-## Challenge
+##### Challenge
 
 Apart from jumping in head-first into HTML and CSS, the biggest challenge on this project was obsessing over the page layout’s responsiveness. I ended up studying and using CSS Grid, even though the 1-column design definitely didn’t call for it! 
 
