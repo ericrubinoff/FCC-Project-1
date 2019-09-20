@@ -1,0 +1,159 @@
+body {
+    margin: 0px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 8em auto auto 8em;
+    grid-template-areas: "header" "img-div" "content" "footer";
+  }
+  
+  .header {
+    display: grid; /*Align horizontal and vertical*/
+    align-items: center;
+    justify-content: center;
+    grid-area: header;
+    background-color: #ffae00;
+  }
+  
+  #title {
+    font-family: "Open Sans", serif;
+    font-weight: 800;
+    text-align: center;
+    color: #1e1e1e;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+  }
+  
+  #titleBold {
+    font-family: "Open Sans", serif;
+    font-weight: 600;
+    text-align: center;
+    color: #1e1e1e;
+  }
+  
+  h2 {
+    font-family: "Open Sans", serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-align: center;
+    color: #1e1e1e;
+    padding-top: 1em;
+  }
+  
+  .h2-bold {
+    font-family: "Open Sans", serif;
+    font-weight: 800;
+    text-align: center;
+    color: #1e1e1e;
+    padding-top: 1em;
+  }
+  
+  /* Image */
+  
+  #img-div {
+    grid-area: img-div;
+    background-color: fcba37;
+    text-align: center;
+    width: 100%;
+  }
+  
+  #image {
+    display: block;
+    max-width: 75%;
+    height: auto; 
+    background-color: blue;
+    margin: 2em auto 1em auto;
+    border-style: solid;
+    border-width: 0.5em;
+    border-color: #ffae00;
+  }
+  
+  #img-caption {
+    font-family: "Open Sans", serif;
+    font-weight: 400;
+    font-size: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+    text-align: center;
+    color: #1e1e1e;
+  }
+  
+  span.avoidwrap { 
+    display:inline-block; }
+  
+  
+  /*Content*/
+  
+  .quotes {
+    grid-area: content;
+    background-color: #e0e0e0;
+    height: auto;
+    text-align: center;
+  }
+  
+  #tribute-info { /* Quotes container */
+    display: inline-block;
+    width: 75%; /* Quote container width */
+    max-width: 100%;
+    padding-bottom: 0.8em;
+  }
+  
+  blockquote {
+    margin: 0em; 
+    
+  }
+  
+  
+  #quote {
+    font-family: "Crimson Text", serif;
+    font-size: 1.5em;
+    text-align: center;
+    color: #2d2d2d;
+    quotes: "\201C""\201D""\2018""\2019";
+    padding: 10px 20px;
+    line-height: 1.5em;
+  }
+  
+  #quote:before {
+    content: open-quote;
+    display: inline;
+    line-height: 0;
+    left: -10px;
+    position: relative;
+    top: 30px;
+    color: #8e8e8e;
+    font-size: 3em;
+  }
+  
+  #quote::after {
+    content: close-quote;
+    display: inline;
+    line-height: 0;
+    left: 10px;
+    position: relative;
+    top: 30px;
+    color: #8e8e8e;
+    font-size: 3em;
+  }
+  
+  /*Footer*/
+  
+  .footer {
+    grid-area: footer;
+    background-color: #ffae00;
+    display: grid; /*Align horizontal and vertical*/
+    align-items: center;
+    justify-content: center;
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+  
+  .paragraph {
+    font-family: "Open Sans", serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    text-align: center;
+    color: #1e1e1e;
+  }
